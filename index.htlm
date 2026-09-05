@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Mẫu CNC Việt Nam - Chia Sẻ & Bán Mẫu Thiết Kế CNC</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: #121212; color: #e0e0e0; }
+
+        /* Top Bar & Header */
+        header { background: #1a1a24; border-bottom: 2px solid #8b5cf6; position: sticky; top: 0; z-index: 1000; }
+        .header-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
+        
+        /* Logo */
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-icon { background: #8b5cf6; color: #fff; font-weight: bold; padding: 8px 12px; border-radius: 50%; font-size: 18px; }
+        .logo-text { font-size: 20px; font-weight: bold; color: #a78bfa; }
+
+        /* Search Bar */
+        .search-container { flex: 1; max-width: 450px; margin: 0 20px; position: relative; }
+        .search-container input { width: 100%; padding: 10px 15px; border-radius: 20px; border: 1px solid #334155; background: #0f172a; color: #fff; outline: none; }
+        .search-container input:focus { border-color: #8b5cf6; }
+
+        /* Navigation Menu */
+        nav { background: #1e1e2d; border-bottom: 1px solid #2d2d3f; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; gap: 20px; padding: 10px 20px; overflow-x: auto; }
+        .nav-container a { color: #cbd5e1; text-decoration: none; font-size: 14px; font-weight: 500; white-space: nowrap; transition: 0.2s; }
+        .nav-container a:hover { color: #a78bfa; }
+
+        /* Banner Ads Top */
+        .ad-space { max-width: 1200px; margin: 15px auto; padding: 20px; background: #1e293b; border: 1px dashed #475569; text-align: center; color: #94a3b8; font-size: 13px; border-radius: 6px; }
+
+        /* Main Content Grid */
+        .main-layout { max-width: 1200px; margin: 20px auto; padding: 0 20px; display: grid; grid-template-columns: 1fr 300px; gap: 25px; }
+
+        /* Products Grid */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+        .card { background: #1e1e2d; border-radius: 8px; border: 1px solid #2d2d3f; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(139, 92, 246, 0.15); border-color: #8b5cf6; }
+        .card-img { width: 100%; height: 180px; object-fit: cover; background: #0f172a; }
+        .card-body { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .card-title { font-size: 15px; font-weight: 600; color: #f1f5f9; margin-bottom: 8px; line-height: 1.4; height: 42px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+        .card-meta { font-size: 12px; color: #94a3b8; margin-bottom: 12px; }
+        
+        /* Buttons */
+        .btn-action { display: flex; gap: 8px; }
+        .btn { flex: 1; padding: 8px 0; text-align: center; border-radius: 4px; text-decoration: none; font-size: 13px; font-weight: bold; cursor: pointer; border: none; }
+        .btn-download { background: #22c55e; color: #fff; }
+        .btn-download:hover { background: #16a34a; }
+        .btn-zalo { background: #0284c7; color: #fff; }
+        .btn-zalo:hover { background: #0369a1; }
+
+        /* Sidebar Right */
+        .sidebar-box { background: #1e1e2d; border: 1px solid #2d2d3f; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
+        .sidebar-title { font-size: 16px; font-weight: bold; color: #a78bfa; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 2px solid #8b5cf6; }
+        .category-list { list-style: none; }
+        .category-list li { margin-bottom: 8px; }
+        .category-list a { color: #cbd5e1; text-decoration: none; font-size: 14px; }
+        .category-list a:hover { color: #a78bfa; }
+
+        /* Footer */
+        footer { background: #0f172a; border-top: 1px solid #1e293b; color: #94a3b8; text-align: center; padding: 25px 20px; margin-top: 40px; font-size: 14px; }
+
+        @media (max-width: 768px) {
+            .main-layout { grid-template-columns: 1fr; }
+            .search-container { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">CNC</div>
+                <div class="logo-text">Kho Mẫu CNC Việt Nam</div>
+            </a>
+            <div class="search-container">
+                <input type="text" placeholder="Nhập từ khóa tìm mẫu vách ngăn, tranh 3D, cổng sắt...">
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#">Trang Chủ</a>
+            <a href="#">Mẫu CNC Miễn Phí</a>
+            <a href="#">Vách Ngăn - Tranh Gỗ</a>
+            <a href="#">Mẫu JDPaint 3D</a>
+            <a href="#">Cổng Sắt - Laser</a>
+            <a href="#">Hướng Dẫn Kỹ Thuật</a>
+        </div>
+    </nav>
+
+    <!-- Ad Banner Top -->
+    <div class="ad-space">
+        [ Vị trí hiển thị Quảng cáo Google AdSense để tối ưu thu nhập ]
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-layout">
+        
+        <!-- Left: Product List -->
+        <div>
+            <div class="product-grid">
+
+                <!-- Sample Card 1: Free -->
+                <div class="card">
+                    <img class="card-img" src="https://via.placeholder.com/300x180/1e293b/a78bfa?text=Vach+Ngan+Hoa+Van" alt="Mẫu Vách Ngăn">
+                    <div class="card-body">
+                        <div>
+                            <div class="card-title">Mẫu Vách Ngăn CNC Hoa Văn Cổ Điển Rực Rỡ</div>
+                            <div class="card-meta">Định dạng: DXF, CDR | Miễn phí</div>
+                        </div>
+                        <div class="btn-action">
+                            <a href="https://drive.google.com" target="_blank" class="btn btn-download">Tải Mẫu Free</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Card 2: Paid -->
+                <div class="card">
+                    <img class="card-img" src="https://via.placeholder.com/300x180/1e293b/a78bfa?text=Tranh+Go+3D+Stl" alt="Tranh Gỗ 3D">
+                    <div class="card-body">
+                        <div>
+                            <div class="card-title">Tranh Trống Đồng Đông Sơn Sơn Thủy 3D Sắc Nét</div>
+                            <div class="card-meta">Giá: 50.000 VNĐ | Định dạng: STL</div>
+                        </div>
+                        <div class="btn-action">
+                            <a href="https://zalo.me" target="_blank" class="btn btn-zalo">Mua Qua Zalo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Card 3: Free -->
+                <div class="card">
+                    <img class="card-img" src="https://via.placeholder.com/300x180/1e293b/a78bfa?text=Cong+Sat+Laser" alt="Cổng Sắt Laser">
+                    <div class="card-body">
+                        <div>
+                            <div class="card-title">Mẫu Cắt Laser Cổng Sắt 4 Cánh Hiện Đại 2026</div>
+                            <div class="card-meta">Định dạng: AutoCAD (DWG) | Miễn phí</div>
+                        </div>
+                        <div class="btn-action">
+                            <a href="https://drive.google.com" target="_blank" class="btn btn-download">Tải Mẫu Free</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Right: Sidebar -->
+        <aside>
+            <div class="sidebar-box">
+                <div class="sidebar-title">Danh Mục Mẫu CNC</div>
+                <ul class="category-list">
+                    <li><a href="#">► Mẫu Vách Ngăn Đẹp (DXF)</a></li>
+                    <li><a href="#">► Tranh Gỗ Phù Điêu 3D (STL)</a></li>
+                    <li><a href="#">► Cửa Cổng & Lan Can Laser</a></li>
+                    <li><a href="#">► Mẫu Trụ Cầu Thang / Tượng Gỗ</a></li>
+                    <li><a href="#">► Mẫu Khắc Tranh Miễn Phí</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <div class="sidebar-title">Hỗ Trợ / Đặt Thiết Kế</div>
+                <p style="font-size: 13px; color: #cbd5e1; line-height: 1.5; margin-bottom: 10px;">Chuyên vẽ lại mẫu CNC theo yêu cầu, chuyển đổi file hình ảnh sang DXF, STL, JDPaint.</p>
+                <a href="https://zalo.me" target="_blank" class="btn btn-zalo" style="display: block; text-align: center;">Liên Hệ Zalo Kỹ Thuật</a>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Kho Mẫu CNC Việt Nam. Tất cả các bản quyền file thiết kế được tổng hợp và chia sẻ.</p>
+    </footer>
+
+</body>
+</html>
